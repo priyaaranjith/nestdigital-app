@@ -13,6 +13,7 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { AddCourseComponent } from './add-course/add-course.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ViewCourseComponent } from './view-course/view-course.component';
 
 const myRoute: Routes=[
   {
@@ -34,6 +35,10 @@ const myRoute: Routes=[
   {
     path:"admin",
     component:AdminComponent
+  },
+  {
+    path:"viewcourse",
+    component:ViewCourseComponent
   }
 ]
 
@@ -47,7 +52,8 @@ const myRoute: Routes=[
     ContactUsComponent,
     GalleryComponent,
     AdminComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
