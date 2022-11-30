@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { AddCourseComponent } from './add-course/add-course.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ViewCourseComponent } from './view-course/view-course.component';
+import { ViewFriendsComponent } from './view-friends/view-friends.component';
 
 const myRoute: Routes=[
   {
@@ -53,7 +54,8 @@ const myRoute: Routes=[
     GalleryComponent,
     AdminComponent,
     AddCourseComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    ViewFriendsComponent
   ],
   imports: [
     BrowserModule,
