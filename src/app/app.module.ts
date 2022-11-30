@@ -11,6 +11,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
+import { AddCourseComponent } from './add-course/add-course.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const myRoute: Routes=[
   {
@@ -44,13 +46,15 @@ const myRoute: Routes=[
     NavBarComponent,
     ContactUsComponent,
     GalleryComponent,
-    AdminComponent
+    AdminComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
     FormsModule,
+    HttpClientModule
     
   ],
   providers: [],
