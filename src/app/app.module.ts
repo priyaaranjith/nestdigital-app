@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { Home1Component } from './home1/home1.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const myRoute: Routes=[
   {
@@ -21,6 +22,10 @@ const myRoute: Routes=[
   {
     path:"contact",
     component:ContactUsComponent
+  },
+  {
+    path:"gallery",
+    component:GalleryComponent
   }
 ]
 
@@ -31,7 +36,8 @@ const myRoute: Routes=[
     HomeComponent,
     Home1Component,
     NavBarComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
